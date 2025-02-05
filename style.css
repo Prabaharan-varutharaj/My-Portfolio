@@ -682,4 +682,42 @@ nav .fas{
     }
 }
 
+/* Responsive Background Images */
+
+/* Tablets and Small Screens */
+@media (max-width: 1024px) {
+    #header {
+        background-size: cover;
+        background-position: center;
+    }
+    .layer {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(56, 190, 239, 0.8)); 
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    #header {
+        background-image: url('./images/phone-background.jpg'); /* Use a smaller image for better loading */
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+    }
+    .layer {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(56, 190, 239, 0.9)); 
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+    #header {
+        background-image: url('./images/phone-background.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+    }
+    .layer {
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(56, 190, 239, 1)); 
+    }
+}
 
